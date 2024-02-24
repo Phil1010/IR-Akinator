@@ -12,6 +12,10 @@ Pour les autres individus, la valeur de cet attribut ne sera pas encore définie
 
 Présentation d'une première méthode avec l'utilisation de la librairie python sklearn. Il reste des boîtes noir, notament concernant l'"indice de Gini", sa formule.
 
+### 22/02/2024
+
+Explication de l'indice de Gini lors de la réunion.
+
 ### Organisation
 
 # un mini exemple sur une petite base de données
@@ -21,3 +25,47 @@ Présentation d'une première méthode avec l'utilisation de la librairie python
 # Overleaf
 
 # petit résumé de gini et gain
+
+L'indice de Gini d'après l'Insee, est un indicateur synthétique permettant de rendre compte du niveau d'inégalité pour une variable et sur une population donnée.
+
+![Exemple arbre généré](image.png)
+
+![Dataset](image-1.png)
+
+Gini pour le premier noeud :
+
+- différence des distances
+
+  d1,2 = 1;
+  d1,3 = 1;
+  d2,3 = 0
+
+- moyenne des distances
+
+  md = 0,667
+
+- moyenne des valeurs des individus
+
+  M = 0,5
+
+- Gini
+
+  G = 0,667/(0,5\*2) = 0,667
+
+Gini pour le second noeud :
+
+- différence des distances :
+
+  d2,3 = 1;
+
+- moyenne des distances :
+
+  md = 0,5
+
+- moyenne des valeurs des individus
+
+  M = 0,5
+
+- Gini
+
+  G = 0,5
